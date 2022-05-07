@@ -18,12 +18,20 @@ body {
 
 p {
   color: $light-600;
-  margin: 0;
+  line-height: 1.6;
+  font-size: $text-sm;
+  @include breakpoint(md) {
+    font-size: $text-base;
+  }
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  color: $light-500;
+  // text-decoration: none;
+}
+
+strong {
+  color: $light-500;
 }
 
 ::selection {

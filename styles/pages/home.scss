@@ -1,0 +1,46 @@
+@use '../abstracts/' as *;
+
+.intro {
+  margin-top: 2rem;
+  display: flex;
+
+  &_table {
+    float: top;
+    width: 300px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    @include breakpoint(sm) {
+      float: right;
+      margin-left: 1em;
+      margin-right: 0;
+    }
+
+    &_row {
+      display: flex;
+      background-color: $dark-500;
+      margin-bottom: 1px;
+      height: max-content;
+      font-size: $text-sm;
+      padding: 0.5em 0.7em;
+
+      .title {
+        width: 40%;
+        font-weight: 600;
+        color: $light-400;
+      }
+
+      .body {
+        width: 70%;
+        color: $light-600;
+      }
+    }
+  }
+}
+
+.game_year_list {
+  margin-bottom: 4rem;
+}

@@ -31,6 +31,7 @@
       .link {
         font-size: $text-sm;
         color: $light-600;
+        text-decoration: none;
         transition: ease-in-out 0.1s;
         &:hover {
           color: $primary-500;

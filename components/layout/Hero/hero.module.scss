@@ -45,6 +45,7 @@
     .subtitle {
       color: $light-400;
       font-size: $text-sm;
+      margin: 0;
       @include breakpoint(md) {
         font-size: $text-md;
       }

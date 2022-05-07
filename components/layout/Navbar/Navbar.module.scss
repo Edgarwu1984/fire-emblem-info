@@ -23,6 +23,8 @@
       font-family: 'Titillium Web', sans-serif;
       font-weight: 900;
       font-size: 1.5em;
+      text-decoration: none;
+      color: $primary-500;
       span {
         color: $light-400;
         font-size: 0.7em;
@@ -40,6 +42,7 @@
         margin-left: 2em;
         font-weight: 600;
         color: $light-500;
+        text-decoration: none;
       }
 
       @include breakpoint(md) {
@@ -66,6 +69,7 @@
         color: $light-500;
         width: 100%;
         text-align: center;
+        text-decoration: none;
         transition: ease-in-out 0.1s;
         &:hover {
           color: $primary-500;

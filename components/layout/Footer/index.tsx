@@ -18,6 +18,14 @@ const Footer: FC = () => {
             <Link href={'/contact-us'}>
               <a className={styles.link}>Contact Us</a>
             </Link>
+            <a
+              className={styles.link}
+              href={'https://fireemblemwiki.com.au/'}
+              target='_blank'
+              rel={'noreferrer'}
+            >
+              Fire Emblem Wiki
+            </a>
             <div className={styles.social}>
               <Link href={'/contact-us'}>
                 <a className={styles.link}>

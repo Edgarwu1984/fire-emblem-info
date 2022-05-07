@@ -1,0 +1,21 @@
+@use '../../styles/abstracts/' as *;
+
+.section_title {
+  position: relative;
+  width: fit-content;
+  font-size: $text-base;
+
+  @include breakpoint(md) {
+    font-size: $text-md;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -0.1em;
+    left: 0;
+    background-color: $primary-500;
+    width: 33%;
+    height: 0.2rem;
+  }
+}
