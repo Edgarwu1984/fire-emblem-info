@@ -1,0 +1,53 @@
+@use '../../../styles/abstracts/' as *;
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  z-index: 0;
+  margin-top: -64px;
+
+  &_image {
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    background-color: antiquewhite;
+    z-index: -1;
+  }
+  ::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#0d1b2d, 0.2);
+    z-index: -1;
+  }
+
+  &_container {
+    padding-top: 64px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    .title {
+      color: $primary-500;
+      font-size: $text-lg;
+      margin-bottom: 0.2em;
+
+      @include breakpoint(md) {
+        font-size: $text-xxl;
+      }
+    }
+    .subtitle {
+      color: $light-400;
+      font-size: $text-sm;
+      @include breakpoint(md) {
+        font-size: $text-md;
+      }
+    }
+  }
+}

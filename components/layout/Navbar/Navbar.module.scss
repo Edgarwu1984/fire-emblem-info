@@ -1,0 +1,117 @@
+@use '../../../styles/abstracts/' as *;
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 64px;
+  color: $primary-500;
+  background-color: rgba($dark-600, 0.95);
+  border-bottom: 1px solid $dark-500;
+  z-index: 99;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    height: 100%;
+
+    .brand {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      font-family: 'Titillium Web', sans-serif;
+      font-weight: 900;
+      font-size: 1.5em;
+      span {
+        color: $light-400;
+        font-size: 0.7em;
+        margin-top: 0.5em;
+        margin-left: 0.3em;
+      }
+    }
+
+    .nav {
+      position: relative;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      & > * {
+        margin-left: 2em;
+        font-weight: 600;
+        color: $light-500;
+      }
+
+      @include breakpoint(md) {
+        display: flex;
+      }
+    }
+
+    .nav_mobile {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      top: 64px;
+      left: 0;
+      width: 100%;
+      background-color: rgba($dark-600, 0.95);
+      border-bottom: 1px solid $dark-500;
+      z-index: 99;
+
+      & > * {
+        padding: 2em;
+        font-weight: 600;
+        color: $light-500;
+        width: 100%;
+        text-align: center;
+        transition: ease-in-out 0.1s;
+        &:hover {
+          color: $primary-500;
+          background-color: rgba($dark-500, 0.75);
+        }
+      }
+    }
+
+    // Link Button Active Style
+    .nav_link_active,
+    .nav_mobile_link_active {
+      color: $primary-500;
+    }
+
+    // Hamburger Button
+    .hamburger_btn {
+      display: flex;
+      height: fit-content;
+      margin-top: auto;
+      margin-bottom: auto;
+      background-color: $dark-600;
+      color: $primary-500;
+      border: none;
+      font-size: 1.2em;
+      padding-top: 0.3em;
+      padding-bottom: 0.3em;
+      border: 1px solid $dark-500;
+      cursor: pointer;
+      transition: ease-in-out 0.1s;
+      &:hover {
+        border: 1px solid $primary-500;
+      }
+
+      @include breakpoint(md) {
+        display: none;
+      }
+    }
+  }
+}
+
+// Background Blurry
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .navbar,
+  .nav_mobile {
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    background-color: rgba($dark-600, 0.5);
+  }
+}
