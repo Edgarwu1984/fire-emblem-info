@@ -13,7 +13,7 @@ import Layout from '../../components/Layout';
 import Modal from '../../components/Modal';
 // Types
 import { Collection } from '../../types/Collection';
-import { NextPage } from 'next';
+import { GetStaticPaths, NextPage } from 'next';
 // Helper Functions
 import getBlurDataURL from '../../helper/getBlurDataURL';
 
@@ -85,7 +85,7 @@ const SingleCollectionPage: NextPage<PageProps> = ({
 
 export default SingleCollectionPage;
 
-export async function getStaticPaths() {
+export const getStaticPaths: GetStaticPaths = () => {
   const files = fs.readdirSync(path.join('data/md'));
 
   const paths = files.map(filename => ({
@@ -98,13 +98,13 @@ export async function getStaticPaths() {
     paths,
     fallback: false,
   };
-}
+};
 
-export async function getStaticProps({
+export const getStaticProps = async ({
   params: { slug },
 }: {
   params: { slug: string };
-}) {
+}) => {
   const markdownWithMeta = fs.readFileSync(
     path.join('data/md', slug + '.md'),
     'utf-8'
@@ -115,4 +115,4 @@ export async function getStaticProps({
   return {
     props: { frontmatter, content, slug },
   };
-}
+};

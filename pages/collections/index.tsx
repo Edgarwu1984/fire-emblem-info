@@ -1,4 +1,4 @@
-import { NextPage } from 'next';
+import { GetStaticProps, NextPage } from 'next';
 import React from 'react';
 import CollectionCard from '../../components/CollectionCard';
 import Layout from '../../components/Layout';
@@ -46,10 +46,10 @@ const CollectionPage: NextPage<PageProps> = ({ collections }) => {
 
 export default CollectionPage;
 
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
       collections: getCollections(),
     },
   };
-}
+};
