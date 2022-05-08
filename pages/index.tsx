@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 import BioCard from '../components/BioCard';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import SectionTitle from '../components/SectionTitle';
 import feBio from '../data/fe_bio.json';
 import seriesInfo from '../data/series_info.json';

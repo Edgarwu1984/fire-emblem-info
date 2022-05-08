@@ -1,7 +1,7 @@
 import { NextPage } from 'next';
 import React from 'react';
 import CollectionCard from '../../components/CollectionCard';
-import Layout from '../../components/layout';
+import Layout from '../../components/Layout';
 import SectionTitle from '../../components/SectionTitle';
 import { getCollections } from '../../helper/getCollections';
 import { Collections, Collection } from '../../types/Collection';

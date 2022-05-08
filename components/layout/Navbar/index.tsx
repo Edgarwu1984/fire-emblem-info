@@ -2,9 +2,9 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { FC, useEffect, useState } from 'react';
 import Container from '../../common/Container';
-import styles from './navbar.module.scss';
 import { GiHamburgerMenu, GiSwordsEmblem } from 'react-icons/gi';
 import { MdClose } from 'react-icons/md';
+import styles from './navbar.module.scss';
 
 const Navbar: FC = () => {
   const router = useRouter();
