@@ -9,13 +9,13 @@ import { marked } from 'marked';
 // Components
 import Link from 'next/link';
 import Image from 'next/image';
-import Layout from '@/components/Layout';
-import Modal from '@/components/Modal';
+import Layout from '../../components/Layout';
+import Modal from '../../components/Modal';
 // Types
-import { Collection } from '@/types/Collection';
+import { Collection } from '../../types/Collection';
 import { NextPage } from 'next';
 // Helper Functions
-import getBlurDataURL from '@/helper/getBlurDataURL';
+import getBlurDataURL from '../../helper/getBlurDataURL';
 
 type PageProps = {
   slug: string;
