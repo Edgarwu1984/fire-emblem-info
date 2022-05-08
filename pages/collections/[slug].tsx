@@ -9,7 +9,7 @@ import { marked } from 'marked';
 // Components
 import Link from 'next/link';
 import Image from 'next/image';
-import Layout from '../../components/Layout';
+import Layout from '../../components/layout';
 import Modal from '../../components/Modal';
 // Types
 import { Collection } from '../../types/Collection';
