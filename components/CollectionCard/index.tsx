@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { FC } from 'react';
 import getBlurDataURL from '../../helper/getBlurDataURL';
-import styles from './Collection_card.module.scss';
+import styles from './collection_card.module.scss';
 
 type CollectionCardProps = {
   slug: string;

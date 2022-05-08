@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import styles from './Section_title.module.scss';
+import styles from './section_title.module.scss';
 
 type SectionTitleProps = {
   text: string;

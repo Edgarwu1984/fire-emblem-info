@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React, { FC } from 'react';
 import Container from '../../common/Container';
-import styles from './Footer.module.scss';
+import styles from './footer.module.scss';
 import {
   FaFacebookSquare,
   FaGithub,
