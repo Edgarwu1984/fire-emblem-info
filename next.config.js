@@ -8,6 +8,7 @@ const nextConfig = {
       'catwithmonocle.com',
     ],
   },
+  include: ['next-env.d.ts', 'pages/**/*', 'components/**/*'],
 };
 
 module.exports = nextConfig;
