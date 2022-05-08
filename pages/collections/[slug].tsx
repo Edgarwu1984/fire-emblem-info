@@ -42,6 +42,7 @@ const SingleCollectionPage: NextPage<PageProps> = ({
 
   return (
     <Layout
+      title={frontmatter.title}
       heroImage={frontmatter.banner_image}
       heroTitle={frontmatter.title}
       heroSubtitle={`Released At: ${frontmatter.releasedAt}`}

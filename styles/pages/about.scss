@@ -1,0 +1,17 @@
+@use '../abstracts/' as *;
+
+.home_page {
+  margin: 1rem 0rem;
+
+  .bio {
+    &_intro {
+      //   display: flex;
+      .photo {
+        width: 128px;
+        height: auto;
+        float: left;
+        margin-right: 1em;
+      }
+    }
+  }
+}

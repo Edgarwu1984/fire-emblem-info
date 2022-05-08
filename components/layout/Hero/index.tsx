@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React, { FC } from 'react';
 import getBlurDataURL from '../../../helper/getBlurDataURL';
 import Container from '../../common/Container';
-import styles from './hero.module.scss';
+import styles from './Hero.module.scss';
 
 type HeroProps = {
   bgImage?: string;

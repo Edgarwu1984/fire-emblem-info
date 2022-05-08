@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React, { FC } from 'react';
 import getBlurDataURL from '../../helper/getBlurDataURL';
-import styles from './biocard.module.scss';
+import styles from './Biocard.module.scss';
 
 type BioCardProps = {
   title: string;
