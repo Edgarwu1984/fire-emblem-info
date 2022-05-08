@@ -14,7 +14,7 @@ type Props = {
   heroImage?: string;
 };
 
-const Layout: FC<Props> = ({
+const Index: FC<Props> = ({
   children,
   title,
   description = 'A website provides all the Fire Emblem games information.',
@@ -38,4 +38,4 @@ const Layout: FC<Props> = ({
   );
 };
 
-export default Layout;
+export default Index;
