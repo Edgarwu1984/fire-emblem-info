@@ -56,15 +56,15 @@ const Navbar: FC = () => {
                   Home
                 </a>
               </Link>
-              <Link href='/collection'>
+              <Link href='/collections'>
                 <a
                   className={
-                    router.pathname === '/collection'
+                    router.pathname === '/collections' || router.query.slug
                       ? styles.nav_mobile_link_active
                       : styles.nav_mobile_link
                   }
                 >
-                  Collection
+                  Collections
                 </a>
               </Link>
               <Link href='/about'>
@@ -94,15 +94,15 @@ const Navbar: FC = () => {
                 Home
               </a>
             </Link>
-            <Link href='/collection'>
+            <Link href='/collections'>
               <a
                 className={
-                  router.pathname === '/collection'
+                  router.pathname === '/collections' || router.query.slug
                     ? styles.nav_link_active
                     : styles.nav_link
                 }
               >
-                Collection
+                Collections
               </a>
             </Link>
             <Link href='/about'>

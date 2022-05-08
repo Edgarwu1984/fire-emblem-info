@@ -36,6 +36,7 @@
     .title {
       color: $primary-500;
       font-size: $text-lg;
+      text-align: center;
       margin-bottom: 0.2em;
 
       @include breakpoint(md) {

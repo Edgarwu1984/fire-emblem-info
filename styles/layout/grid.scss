@@ -1,6 +1,18 @@
+// .grid {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+//   gap: 1rem;
+// }
+
+@use '../abstracts/' as *;
+
 .grid {
-  display: grid;
-  //   grid-template-columns: repeat(4, 1fr);
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+
+  @include breakpoint(md) {
+    justify-content: flex-start;
+  }
 }

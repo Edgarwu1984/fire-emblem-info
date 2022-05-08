@@ -1,0 +1,37 @@
+@use '../abstracts/' as *;
+
+.breadcrumb {
+  width: 100%;
+  display: flex;
+
+  a {
+    &:hover {
+      color: $primary-500;
+    }
+  }
+
+  & > * {
+    text-decoration: none;
+
+    &::before {
+      content: '/';
+      margin: 0em 0.4em;
+    }
+  }
+}
+
+.gallery_section {
+  margin-bottom: 4rem;
+
+  .gallery_img {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: ease-in-out 0.1s;
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0px 6px 20px rgba(rgb(8, 8, 10), 0.9);
+    }
+  }
+}

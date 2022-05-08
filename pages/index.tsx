@@ -131,6 +131,7 @@ const HomePage: NextPage = () => {
         </p>
       </section>
       <section className='game_year_list'>
+        <SectionTitle text='Release List' />
         <div className='grid'>
           {seriesInfo &&
             seriesInfo.map((item, index) => (
