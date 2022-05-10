@@ -3,11 +3,11 @@
 .section_title {
   position: relative;
   width: fit-content;
-  font-size: $text-base;
+  font-size: $text-md;
   margin-bottom: 1rem;
 
   @include breakpoint(md) {
-    font-size: $text-md;
+    font-size: $text-lg;
   }
 
   &::before {

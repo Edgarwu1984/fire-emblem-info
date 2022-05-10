@@ -1,18 +1,34 @@
-// .grid {
-//   display: grid;
-//   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-//   gap: 1rem;
-// }
-
 @use '../abstracts/' as *;
 
 .grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 3rem;
-
+  @include breakpoint(sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
   @include breakpoint(md) {
-    justify-content: flex-start;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include breakpoint(lg) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @include breakpoint(xl) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @include breakpoint(xxl) {
+    grid-template-columns: repeat(5, 1fr);
   }
 }
+// .grid {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+//   gap: 3rem;
+
+//   @include breakpoint(md) {
+//     justify-content: flex-start;
+//   }
+// }

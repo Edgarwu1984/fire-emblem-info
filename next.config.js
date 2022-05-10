@@ -7,6 +7,8 @@ const nextConfig = {
       'd3fd5j8wprxn3h.cloudfront.net',
       'images4.alphacoders.com',
       'catwithmonocle.com',
+      'areajugones.sport.es',
+      'www.itl.cat',
     ],
   },
 };

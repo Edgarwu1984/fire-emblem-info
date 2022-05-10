@@ -20,8 +20,8 @@ const Footer: FC = () => {
             <Link href={'/privacy-policy'}>
               <a className={styles.link}>Privacy Policy</a>
             </Link>
-            <Link href={'/contact-us'}>
-              <a className={styles.link}>Contact Us</a>
+            <Link href={'/contact'}>
+              <a className={styles.link}>Contact Me</a>
             </Link>
             <a
               className={styles.link}

@@ -5,6 +5,11 @@
   height: auto;
   text-decoration: none;
   transition: ease-in-out 0.2s;
+
+  @include breakpoint(md) {
+    width: 100%;
+  }
+
   &:hover {
     background-color: $dark-500;
     transform: translateY(-4px);

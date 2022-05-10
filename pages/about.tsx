@@ -41,12 +41,55 @@ const AboutPage: NextPage = () => {
         </section>
         <section>
           <SectionTitle text='Fire Emblem Wiki' />
-          <div>
+          <p>
+            <a
+              href='https://fireemblemwiki.com.au/'
+              target={'_blank'}
+              rel='noreferrer'
+            >
+              <strong>Fire Emblem Wiki </strong>
+            </a>
+            is another my previous project about Fire Emblem. This website
+            essentially provides all the series game instructions and tricks to
+            help Fire Emblem fans getting better game-play experiences.
+          </p>
+          <p>
+            This website built by React, and also using other technologies
+            including Firebase, context-API, etc.{' '}
+          </p>
+          <div className='grid'>
             <Image
-              src={'/img/fewiki.jpeg'}
-              alt={'fire_emblem_wiki'}
-              width={400}
-              height={300}
+              src={'/img/fewiki01.jpg'}
+              alt={'fire_emblem_wiki_01'}
+              width={300}
+              height={160}
+              objectFit='cover'
+              placeholder='blur'
+              blurDataURL={getBlurDataURL()}
+            />
+            <Image
+              src={'/img/fewiki02.jpg'}
+              alt={'fire_emblem_wiki_02'}
+              width={300}
+              height={160}
+              objectFit='cover'
+              placeholder='blur'
+              blurDataURL={getBlurDataURL()}
+            />
+            <Image
+              src={'/img/fewiki03.jpg'}
+              alt={'fire_emblem_wiki_03'}
+              width={300}
+              height={160}
+              objectFit='cover'
+              placeholder='blur'
+              blurDataURL={getBlurDataURL()}
+            />
+            <Image
+              src={'/img/fewiki04.jpg'}
+              alt={'fire_emblem_wiki_04'}
+              width={300}
+              height={160}
               objectFit='cover'
               placeholder='blur'
               blurDataURL={getBlurDataURL()}

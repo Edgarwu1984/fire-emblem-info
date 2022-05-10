@@ -6,6 +6,10 @@
   width: 200px;
   height: 84px;
 
+  @include breakpoint(md) {
+    width: 100%;
+  }
+
   .year {
     position: relative;
     width: 100%;

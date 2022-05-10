@@ -2,10 +2,24 @@
 
 html,
 body {
+  position: relative;
   padding: 0;
   margin: 0;
   background-color: $dark-600;
   color: $light-500;
+  z-index: 1;
+  &::after {
+    position: absolute;
+    inset: 0;
+    content: '';
+    filter: brightness(0.3);
+    background-image: url('/img/bg_patten.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+  }
 }
 
 #__next {
