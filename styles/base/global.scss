@@ -13,7 +13,7 @@ body {
     inset: 0;
     content: '';
     filter: brightness(0.3);
-    background-image: url('/img/bg_patten.png');
+    background-image: url('/img/bg_patten.jpg');
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -44,11 +44,11 @@ section {
 
 *::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
-  background-color: $dark-400;
+  background-color: $dark-500;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: $dark-500;
-  border: 1px solid $dark-500;
+  background-color: $dark-400;
+  border: 1px solid $dark-400;
   border-radius: 4px;
 }

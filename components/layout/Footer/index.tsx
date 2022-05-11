@@ -17,7 +17,7 @@ const Footer: FC = () => {
       <Container>
         <div className={styles.container}>
           <div className={styles.nav}>
-            <Link href={'/privacy-policy'}>
+            <Link href={'/privacy'}>
               <a className={styles.link}>Privacy Policy</a>
             </Link>
             <Link href={'/contact'}>
