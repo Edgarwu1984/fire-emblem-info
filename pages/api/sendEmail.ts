@@ -25,8 +25,8 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
     if (fullname && email && message) {
       await transporter.sendMail({
-        // from: email,
         to: 'ezwu.dev@gmail.com',
+        text: 'Fire Emblem Info',
         subject: `A Message from ${fullname}`,
         html: `
         <div>

@@ -47,7 +47,7 @@ const ContactForm: FC = () => {
       } else {
         setStatus('pending');
 
-        const res = await fetch(`http://localhost:3000/api/sendEmail`, {
+        const res = await fetch(`/api/sendEmail`, {
           method: 'POST',
           body: emailData,
         });
@@ -128,7 +128,7 @@ const ContactForm: FC = () => {
       <div className='form_group'>
         <input
           type='submit'
-          name={status === 'pending' ? 'Sending...' : 'Submit'}
+          value={status === 'pending' ? 'Sending...' : 'Submit'}
           className='form_btn'
           disabled={status === 'pending' ? true : false}
         />
