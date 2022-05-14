@@ -3,7 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import Container from '../components/common/Container';
-import { MdOutlineErrorOutline } from 'react-icons/md';
+import { MdOutlineErrorOutline, MdKeyboardBackspace } from 'react-icons/md';
+import Button from '../components/common/Button/Button';
 
 const NotFoundPage: NextPage = () => {
   return (
@@ -24,9 +25,13 @@ const NotFoundPage: NextPage = () => {
             <MdOutlineErrorOutline size={'2rem'} />
             <h1>404 Page Not Found</h1>
           </div>
-          <Link href={'/'}>
-            <a className='btn'>Go Back</a>
-          </Link>
+          <Button
+            as={'link'}
+            href='/'
+            variant='primary'
+            text='Go Back'
+            icon={<MdKeyboardBackspace />}
+          />
         </div>
       </div>
     </Container>

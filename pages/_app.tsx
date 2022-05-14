@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
          gtag('config', '${process.env.NEXT_PUBLIC_GA_CODE}');
          `}
       </Script>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </>
   );
 }

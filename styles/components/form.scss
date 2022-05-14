@@ -1,0 +1,99 @@
+@use '../abstracts/' as *;
+
+.form {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &_group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0rem;
+
+    label {
+      margin-bottom: 0.4em;
+    }
+
+    .form_control {
+      font-size: $text-base;
+      padding: 0.6em 1em;
+      background-color: $dark-400;
+      border: 1px solid $dark-500;
+      border-radius: 0.2rem;
+      color: $light-400;
+
+      &:focus,
+      &:active {
+        outline: 1px solid $primary-600;
+      }
+    }
+  }
+
+  &_btn {
+    font-size: $text-base;
+    text-decoration: none;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: $primary-500;
+    color: $dark-600;
+    padding: 0.4em 1em;
+    border: 1px solid $primary-500;
+    border-radius: 0.2em;
+    transition: ease-in-out 0.1s;
+    cursor: pointer;
+    &:focus {
+      outline: 1px solid $light-600;
+    }
+    &:hover {
+      background-color: $dark-600;
+      border-color: $primary-500;
+      color: $primary-500;
+    }
+    &:disabled {
+      cursor: not-allowed;
+      filter: grayscale(50%);
+      pointer-events: none;
+    }
+  }
+}
+
+.alert_box {
+  position: relative;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: $dark-400;
+  border-radius: 0.2em;
+  border: 1px solid $light-600;
+
+  &_btn {
+    position: absolute;
+    top: 0.3rem;
+    right: 0.5rem;
+    font-size: $text-md;
+    padding: 0em 0.1em;
+    cursor: pointer;
+    transition: ease-in-out 0.1s;
+    &:focus,
+    &:hover {
+      border-radius: 0.2rem;
+      background-color: rgba($dark-400, 0.5);
+    }
+  }
+}
+
+.alert_box_success {
+  background-color: rgba($success, 0.3);
+  color: $success;
+  border-color: $success;
+}
+
+.alert_box_error {
+  background-color: rgba($danger, 0.3);
+  color: $danger;
+  border-color: $danger;
+}

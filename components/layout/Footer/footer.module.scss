@@ -41,8 +41,9 @@
       .social {
         display: flex;
         align-items: center;
-        gap: 0.7em;
         .link {
+          margin-left: 6px;
+          margin-right: 6px;
           font-size: $text-md;
         }
       }

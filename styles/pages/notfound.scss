@@ -46,24 +46,5 @@
       gap: 1em;
       margin-bottom: 2rem;
     }
-
-    .btn {
-      text-decoration: none;
-      background-color: $primary-500;
-      color: $dark-600;
-      padding: 0.3em 1em;
-      border: 1px solid $primary-500;
-      border-radius: 0.2em;
-      font-weight: 600;
-      transition: ease-in-out 0.1s;
-      &:focus {
-        outline-color: $primary-400;
-      }
-      &:hover {
-        background-color: $dark-600;
-        border-color: $primary-500;
-        color: $primary-500;
-      }
-    }
   }
 }

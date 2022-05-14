@@ -9,6 +9,7 @@ const nextConfig = {
       'catwithmonocle.com',
       'areajugones.sport.es',
       'www.itl.cat',
+      'i.pinimg.com',
     ],
   },
 };
