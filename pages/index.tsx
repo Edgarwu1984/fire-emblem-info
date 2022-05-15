@@ -144,6 +144,9 @@ const HomePage: NextPage = () => {
             ))}
         </div>
       </section>
+      <br />
+      <br />
+      <br />
     </Layout>
   );
 };

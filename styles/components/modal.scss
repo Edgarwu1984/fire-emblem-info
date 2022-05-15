@@ -3,8 +3,8 @@
 .img-popup-content {
   margin: auto;
   background-color: $dark-500;
-  width: fit-content;
-  height: auto;
+  max-width: 800px;
+  max-height: 800px;
 }
 
 .popup-overlay {

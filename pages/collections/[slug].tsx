@@ -52,6 +52,7 @@ const SingleCollectionPage: NextPage<PageProps> = ({
           <Link href={`/${urlArray[1]}`}>
             <a>{urlArray[1]}</a>
           </Link>
+          <span>{'>'}</span>
           <div>{urlArray[2]}</div>
         </div>
       </section>

@@ -97,6 +97,9 @@ const AboutPage: NextPage = () => {
           </div>
         </section>
       </div>
+      <br />
+      <br />
+      <br />
     </Layout>
   );
 };
