@@ -2,81 +2,81 @@
   {
     "title": "Shadow Dragon and the Blade of Light",
     "releasedAt": "1990",
-    "image": "/img/fe1.png"
+    "image": "/img/fe/Fe1banner.jpeg"
   },
   {
     "title": "Gaiden",
     "releasedAt": "1992",
-    "image": "/img/fe2.png"
+    "image": "/img/fe/Fe2banner.jpg"
   },
   {
     "title": "Mystery of the Emblem",
     "releasedAt": "1994",
-    "image": "/img/fe1.png"
+    "image": "/img/fe/Fe3banner.jpg"
   },
   {
     "title": "Genealogy of the Holy War",
     "releasedAt": "1996",
-    "image": "/img/fe1.png"
+    "image": "/img/fe/Fe6banner.jpg"
   },
   {
     "title": "Thracia 776",
     "releasedAt": "1999",
-    "image": "/img/fe1.png"
+    "image": "/img/fe/Fe4banner.jpg"
   },
   {
     "title": "The Binding Blade",
     "releasedAt": "2002",
-    "image": "/img/fe1.png"
+    "image": "/img/fe/Fe5banner.png"
   },
   {
     "title": "The Blazing Blade",
     "releasedAt": "2003",
-    "image": "/img/fe1.png"
+    "image": "/img/fe/Fe7banner.jpg"
   },
   {
     "title": "The Sacred Stones",
     "releasedAt": "2004",
-    "image": "/img/fe1.png"
+    "image": "/img/fe/Fe8banner.jpg"
   },
   {
     "title": "Path of Radiance",
     "releasedAt": "2005",
-    "image": "/img/fe1.png"
+    "image": "/img/fe/Fe9banner.jpg"
   },
   {
     "title": "Radiant Dawn",
     "releasedAt": "2007",
-    "image": "/img/fe1.png"
+    "image": "/img/fe/Fe10banner.jpg"
   },
   {
     "title": "Shadow Dragon",
     "releasedAt": "2008",
-    "image": "/img/fe1.png"
+    "image": "/img/fe/Fe11banner.jpg"
   },
   {
     "title": "New Mystery of the Emblem",
     "releasedAt": "2010",
-    "image": "/img/fe1.png"
+    "image": "/img/fe/Fe12banner.jpg"
   },
   {
     "title": "Awakening",
     "releasedAt": "2012",
-    "image": "/img/fe1.png"
+    "image": "/img/fe/Fe13banner.jpg"
   },
   {
     "title": "Fates",
     "releasedAt": "2015",
-    "image": "/img/fe1.png"
+    "image": "/img/fe/Fe14banner.jpg"
   },
   {
     "title": "Echoes: Shadows of Valentia",
     "releasedAt": "2017",
-    "image": "/img/fe1.png"
+    "image": "/img/fe/Fe15banner.jpg"
   },
   {
     "title": "Three Houses",
     "releasedAt": "2019",
-    "image": "/img/fe1.png"
+    "image": "/img/fe/Fe16banner.jpg"
   }
 ]

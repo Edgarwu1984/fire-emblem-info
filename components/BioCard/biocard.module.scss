@@ -4,7 +4,24 @@
   position: relative;
   background-color: $dark-500;
   width: 200px;
-  height: 84px;
+  height: 96px;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover {
+    .image {
+      transition: ease-in-out 0.2s;
+      opacity: 0.3;
+    }
+    .title {
+      p {
+        transition: ease-in-out 0.2s;
+        color: $light-400;
+        text-decoration: underline;
+      }
+    }
+  }
 
   @include breakpoint(md) {
     width: 100%;
@@ -21,8 +38,22 @@
     }
   }
 
+  .image {
+    object-fit: cover;
+    opacity: 0.1;
+  }
+
   .title {
+    position: absolute;
+    top: 1em;
+    height: 86px;
+    display: flex;
+    align-items: center;
     padding: 0.7em 0.5em;
-    font-size: $text-sm;
+    z-index: 2;
+    p {
+      color: $light-500;
+      font-size: $text-sm;
+    }
   }
 }

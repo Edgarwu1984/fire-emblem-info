@@ -1,9 +1,10 @@
-import { NextPage } from 'next';
+import { GetStaticProps, NextPage } from 'next';
 import BioCard from '../components/BioCard';
 import Layout from '../components/layout';
 import SectionTitle from '../components/SectionTitle';
 import feBio from '../data/fe_bio.json';
 import seriesInfo from '../data/series_info.json';
+import { getCollections } from '../helper/getCollections';
 
 const HomePage: NextPage = () => {
   return (
@@ -152,3 +153,11 @@ const HomePage: NextPage = () => {
 };
 
 export default HomePage;
+
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {
+      collections: getCollections(),
+    },
+  };
+};
