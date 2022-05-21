@@ -24,7 +24,7 @@ const BioCard: FC<BioCardProps> = ({ title, releasedAt, image }) => {
           src={`${image}`}
           alt='game-logo'
           width={200}
-          height={48}
+          height={64}
           layout='responsive'
           placeholder='blur'
           blurDataURL={getBlurDataURL()}
